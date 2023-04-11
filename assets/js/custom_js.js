@@ -1,3 +1,6 @@
+function welcome(){
+    alert("This is the only FrontEnd theme created and designed by my own ideas which is done on as my semester project by using local storage. But after attaching DataBase and PHP it will be completely workable.")
+}
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////------------------------------------------------Toggle  -----------------------------------------------------
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
