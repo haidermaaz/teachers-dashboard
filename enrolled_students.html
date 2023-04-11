@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!---------------------favicon----------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------google fonts-------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-----------------------fontawesome--------------------->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <!------bootstrap 5 css link-------->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-------css link---------->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <title>Enrolled Students</title>
+</head>
+
+<body>
+     <!--------------------------------------side navbar-------------------------------------->
+     <aside class="side-nav" id="side-nav">
+        <div class="logo">
+            <img id="logo-img" src="./assets/images/logo.png">
+            <h2 class=" d-md-block" id="logo-head">Teacher's <br> Dashboard</h2>
+            <i class="fa-solid fa-bars fa-2x d-block d-md-none mt-4" id="togg-close" onclick="toggle()"></i>
+        </div>
+        <nav class="d-md-block" id="navbar">
+            <ul>
+                <li><i class="fa-solid fa-book"></i><a href="index.html"> Cources</a> </li>
+                <li><i class="fa-solid fa-user-graduate"></i><a href="enrolled_students.html"> Enrolled Students
+                    </a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="register-more.html"> Register More </a></li>
+                <li><i class="fa-solid fa-pen-to-square"></i><a href="todo.html"> To do list </a></li>
+                <li><i class="fa-solid fa-video"></i><a href="https://meet.google.com/?hs=197&pli=1&authuser=0">
+                        Online Class </a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-----------------------------------host------------------------------------------>
+   
+    <div class="host">
+        <!------------------------------top bar---------------------------------->
+        <div class="top-bar" id="top-bar">
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <i class="fa-solid fa-bars fa-2x d-block ms-auto d-md-none" id="togg-open" onclick="toggle()"></i>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------enrolled main------------------------------->
+        
+            <div class="col-md-12 tb-host">
+                
+                <h1 class="text-center my-5" id="maaz"><u>Enrolled Students</u></h1>
+                <center>
+                    <div class="col-md-6 mb-2">
+                        <input type="search" id="serinput" placeholder="Search data here" onkeyup="searchTask()">
+                    </div>
+                </center>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Father Name</th>
+                        <th>Email Address</th>
+                        <th>Contact Number</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Date</th>
+                        <th>Country</th>
+                        <th>Province</th>
+                        <th>Course</th>
+                        <th>Action</th>
+                    </tr>
+                    <!-- -----data host----- -->
+                    <tbody id="data-host">
+
+                    </tbody>
+                </table> 
+            </div>
+    </div>
+    <!------bootstrap js link------->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!------Custom js link------->
+    <script src="./assets/js/js_two.js"></script>
+
+
+</body>
+
+</html>

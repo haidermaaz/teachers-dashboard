@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------------favicon----------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!---------google fonts-------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-----------------------fontawesome--------------------->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <!------bootstrap 5 css link-------->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-------css link---------->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <title>Teacher's Dashboard</title>
+</head>
+
+<body>
+    <!--------------------------------------side navbar-------------------------------------->
+    <aside class="side-nav" id="side-nav">
+        <div class="logo">
+            <img id="logo-img" src="./assets/images/logo.png">
+            <h2 class=" d-md-block" id="logo-head">Teacher's <br> Dashboard</h2>
+            <i class="fa-solid fa-bars fa-2x d-block d-md-none mt-4" id="togg-close" onclick="toggle()"></i>
+        </div>
+        <nav class="d-md-block" id="navbar">
+            <ul>
+                <li><i class="fa-solid fa-book"></i><a href="index.html"> Cources</a> </li>
+                <li><i class="fa-solid fa-user-graduate"></i><a href="enrolled_students.html"> Enrolled Students
+                    </a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="register-more.html"> Register More </a></li>
+                <li><i class="fa-solid fa-pen-to-square"></i><a href="todo.html"> To do list </a></li>
+                <li><i class="fa-solid fa-video"></i><a href="https://meet.google.com/?hs=197&pli=1&authuser=0">
+                        Online Class </a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-----------------------------------host------------------------------------------>
+    <div class="host">
+        <!------------------------------top bar---------------------------------->
+        <div class="top-bar" id="top-bar">
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <i class="fa-solid fa-bars fa-2x d-block ms-auto d-md-none" id="togg-open" onclick="toggle()"></i>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------course main------------------------>
+        <div class="course-main py-xl-0 py-lg-5 ">
+            <!------------------------------------row 1---------------------------------------->
+            <div class="row ms-4 ms-xl-4 ms-md-3 ">
+                <!-------card 1--------->
+                <div class="col-lg-4 col-md-6 my-3 my-sm-0">
+                    <div class="course">
+                        <div class="pic">
+                            <img src="./assets/images/web.png" height="100%" width="100%" alt="">
+                        </div>
+                        <div class="mid">
+                            <h4>Web Design & Development</h4>
+                            <p>By Mr.Muhammad Rehman</p>
+                        </div>
+                        <div class="bottom">
+                            <a href="https://classroom.google.com/u/0/c/MTc2OTc0MjQ5MDI3">
+                                <i class="fa-regular fa-folder-open fa-2x"></i>
+                                <span> Open This </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-------card 2--------->
+                <div class="col-lg-4 col-md-6 my-3 my-sm-0 ">
+                    <div class="course">
+                        <div class="pic">
+                            <img src="./assets/images/search.webp" height="100%" width="100%" alt="">
+                        </div>
+                        <div class="mid">
+                            <h4>Search Engine Optimization (SEO)</h4>
+                            <p>By Mr.Muhammad Rehman</p>
+                        </div>
+                        <div class="bottom">
+                            <a href="https://classroom.google.com/u/0/c/MTc2OTc0MjQ5MDI3">
+                                <i class="fa-regular fa-folder-open fa-2x"></i>
+                                <span> Open this </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-------card 3--------->
+                <div class="col-lg-4 col-md-6 mt-md-5 mt-lg-0  mx-md-auto mx-lg-0 my-3 my-sm-0">
+                    <div class="course">
+                        <div class="pic">
+                            <img src="./assets/images/1000.jpg" height="100%" width="100%" alt="">
+                        </div>
+                        <div class="mid">
+                            <h4>Digital Marketting</h4>
+                            <p>By Mr.Muhammad Rehman</p>
+                        </div>
+                        <div class="bottom">
+                            <a href="https://classroom.google.com/u/0/c/MTc2OTc0MjQ5MDI3">
+                                <i class="fa-regular fa-folder-open fa-2x"></i>
+                                <span> Open this </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------row 2---------------------------------------->
+            <div class="row mt-md-5 ms-4">
+                <!-------card 4--------->
+                <div class="col-lg-4 col-md-6 my-3 my-sm-0">
+                    <div class="course">
+                        <div class="pic">
+                            <img src="./assets/images/Chain.jpg" height="100%" width="100%" alt="">
+                        </div>
+                        <div class="mid">
+                            <h4>Block Chain</h4>
+                            <p>By Mr.Muhammad Rehman</p>
+                        </div>
+                        <div class="bottom">
+                            <a href="https://classroom.google.com/u/0/c/MTc2OTc0MjQ5MDI3">
+                                <i class="fa-regular fa-folder-open fa-2x"></i>
+                                <span> Open This </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-------card 5--------->
+                <div class="col-lg-4 col-md-6 my-3 my-sm-0">
+                    <div class="course">
+                        <div class="pic">
+                            <img src="./assets/images/ap.webp" height="100%" width="100%" alt="">
+                        </div>
+                        <div class="mid">
+                            <h4>App Development</h4>
+                            <p>By Mr.Muhammad Rehman</p>
+                        </div>
+                        <div class="bottom">
+                            <a href="https://classroom.google.com/u/0/c/MTc2OTc0MjQ5MDI3">
+                                <i class="fa-regular fa-folder-open fa-2x"></i>
+                                <span> Open this </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-------card 6--------->
+                <div class="col-lg-4 col-md-6 mt-md-5 mt-lg-0 mx-md-auto mx-lg-0 my-3 my-sm-0 mb-4">
+                    <div class="course">
+                        <div class="pic">
+                            <img src="./assets/images/artificial.jpg" height="100%" width="100%" alt="">
+                        </div>
+                        <div class="mid">
+                            <h4>Artificial Intelligence (AI)</h4>
+                            <p>By Mr.Muhammad Rehman</p>
+                        </div>
+                        <div class="bottom">
+                            <a href="https://classroom.google.com/u/0/c/MTc2OTc0MjQ5MDI3">
+                                <i class="fa-regular fa-folder-open fa-2x"></i>
+                                <span> Open this </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+
+    </footer>
+    <!------bootstrap js link------->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!------custom js link------->
+    <script src="./assets/js/custom_js.js"></script>
+</body>
+
+</html>

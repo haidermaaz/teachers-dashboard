@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---------------------favicon----------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------google fonts-------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-----------------------fontawesome--------------------->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <!------bootstrap 5 css link-------->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-------css link---------->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+
+    <title>Register More</title>
+</head>
+
+<body>
+     <!--------------------------------------side navbar-------------------------------------->
+     <aside class="side-nav" id="side-nav">
+        <div class="logo">
+            <img id="logo-img" src="./assets/images/logo.png">
+            <h2 class=" d-md-block" id="logo-head">Teacher's <br> Dashboard</h2>
+            <i class="fa-solid fa-bars fa-2x d-block d-md-none mt-4" id="togg-close" onclick="toggle()"></i>
+        </div>
+        <nav class="d-md-block" id="navbar">
+            <ul>
+                <li><i class="fa-solid fa-book"></i><a href="index.html"> Cources</a> </li>
+                <li><i class="fa-solid fa-user-graduate"></i><a href="enrolled_students.html"> Enrolled Students
+                    </a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="register-more.html"> Register More </a></li>
+                <li><i class="fa-solid fa-pen-to-square"></i><a href="todo.html"> To do list </a></li>
+                <li><i class="fa-solid fa-video"></i><a href="https://meet.google.com/?hs=197&pli=1&authuser=0">
+                        Online Class </a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-----------------------------------host------------------------------------------>
+    <div class="host">
+        <!------------------------------top bar---------------------------------->
+        <div class="top-bar" id="top-bar">
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <i class="fa-solid fa-bars fa-2x d-block ms-auto d-md-none" id="togg-open" onclick="toggle()"></i>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------register main------------------------------->
+        <div class="register-main">
+            <h1 class="text-center">Register New Student</h1>
+            <div class="row hlo">
+                <div class="col-md-6 col-10 form-host">
+                    <form action="#" class="p-md-3 py-3">
+                        <!-----------row 1------------>
+                        <div class="row  ">
+                            <div class="col-md-6">
+                                <input class="my-2" type="text" id="inpName" placeholder=" Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="my-2" type="text" id="inpFName" placeholder=" Father Name">
+                            </div>
+                        </div>
+                        <!-----------row 2------------>
+                        <div class="row  ">
+                            <div class="col-md-6">
+                                <input class="my-2" type="text" id="inpEmail" placeholder=" Email Address">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="my-2" type="text" id="inpNumber" placeholder=" Contact Number">
+                            </div>
+                        </div>
+                        <!-----------row 3------------>
+                        <div class="row">
+                            <center>
+                                <div class="col-md-6">
+                                    <div class="gender-host my-2">
+                                        <label for="gender" id="genderLbl"><b><u> Select Gender</u></b>
+                                            <input type="radio" name="gender" value="Male" class="ms-5" id="inpMale">
+                                            Male
+                                            <input type="radio" name="gender" value="Female" class="ms-5"
+                                                id="inpFemale">
+                                            Female
+                                        </label>
+                                    </div>
+                                </div>
+                            </center>
+                            <div class="row">
+                                <input class="my-2" type="address" id="inpAddress" placeholder=" Address">
+                            </div>
+                            <center>
+                                <div class="col-md-6">
+                                    <input class="my-2" type="date" id="inpDate">
+                                </div>
+                            </center>
+                        </div>
+                        <!-----------row 4------------>
+                        <div class="row  ">
+                            <div class="col-md-6">
+                                <input class="my-2" type="text" id="inpCountry" placeholder=" Country">
+                            </div>
+                            <div class="col-md-6">
+                                <select class="my-2" name="province" id="inpProvince">
+                                    <option selected value="">Province</option>
+                                    <option value="punjab">Punjab</option>
+                                    <option value="sindh">Sindh</option>
+                                    <option value="balochistan">Balochistan</option>
+                                    <option value="kpk">KPK</option>
+                                </select>
+                            </div>
+                        </div>
+                        <center>
+                            <div class="col-md-6">
+                                <select class="my-2" name="course" id="inpCourse">
+                                    <option selected value="">Select Online Course you want</option>
+                                    <option value="Web Design & Development">Web Design & Development</option>
+                                    <option value="SEO">SEO</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="Virtual Assistant">Virtual Assistant</option>
+                                </select>
+                            </div>
+                            <button id="submit" class="btn mt-4 mb-2">Submit</button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!------bootstrap js link------->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!------Custom js link------->
+    <script src="./assets/js/js_two.js"></script>
+    <script src="./assets/js/custom_js.js"></script>
+</body>
+
+</html>
