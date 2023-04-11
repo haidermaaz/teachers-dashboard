@@ -8,6 +8,7 @@ function toggle(){
     var logohead = document.getElementById("logo-head");
     var sidenav = document.getElementById("side-nav")
     var element = document.getElementById("navbar");
+    var add = document.getElementById("togg-open");
 
     if(element.style.display === "none"){
 
@@ -15,8 +16,12 @@ function toggle(){
         sidenav.style.width = "100%";
         logohead.style.display = "block";
         toggClose.style.fontSize = "2em";
-        topbar.style.display = "none";
+        topbar.style.height = "0px";
+        // topbar.style.transition = "all 0.75s ease-in-out;"
         logoImg.style.width = "60%";
+        add.classList.remove("fa-bars");
+    add.classList.add("fa-xmark");
+
 
     }
     else{
@@ -25,8 +30,12 @@ function toggle(){
         sidenav.style.minWidth = "70px";
         logohead.style.display = "none";
         toggClose.style.fontSize = "0";
-        topbar.style.display = "block";
+        topbar.style.height = "70px";
+    add.classList.remove("fa-xmark");
+    add.classList.add("fa-bars");
+
     }
+    
 }
 
 

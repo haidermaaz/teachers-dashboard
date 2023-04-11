@@ -29,8 +29,8 @@
 </head>
 
 <body>
-     <!--------------------------------------side navbar-------------------------------------->
-     <aside class="side-nav" id="side-nav">
+    <!--------------------------------------side navbar-------------------------------------->
+    <aside class="side-nav" id="side-nav">
         <div class="logo">
             <img id="logo-img" src="./assets/images/logo.png">
             <h2 class=" d-md-block" id="logo-head">Teacher's <br> Dashboard</h2>
@@ -49,7 +49,7 @@
         </nav>
     </aside>
     <!-----------------------------------host------------------------------------------>
-   
+
     <div class="host">
         <!------------------------------top bar---------------------------------->
         <div class="top-bar" id="top-bar">
@@ -61,15 +61,16 @@
             </div>
         </div>
         <!--------------------------------enrolled main------------------------------->
-        
-            <div class="col-md-12 tb-host">
-                
-                <h1 class="text-center my-5" id="maaz"><u>Enrolled Students</u></h1>
-                <center>
-                    <div class="col-md-6 mb-2">
-                        <input type="search" id="serinput" placeholder="Search data here" onkeyup="searchTask()">
-                    </div>
-                </center>
+
+        <div class="col-md-12 tb-host">
+
+            <h1 class="text-center my-5" id="maaz"><u>Enrolled Students</u></h1>
+            <center>
+                <div class="col-md-6 mb-2">
+                    <input type="search" id="serinput" placeholder="Search data here" onkeyup="searchTask()">
+                </div>
+            </center>
+            <div style="overflow-x: auto;">
                 <table>
                     <tr>
                         <th>Name</th>
@@ -88,8 +89,9 @@
                     <tbody id="data-host">
 
                     </tbody>
-                </table> 
+                </table>
             </div>
+        </div>
     </div>
     <!------bootstrap js link------->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>

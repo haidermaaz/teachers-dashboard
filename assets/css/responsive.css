@@ -29,6 +29,9 @@
     .side-nav{
         transition: all 0.75s ease-in-out;
     }
+    .top-bar{
+        transition: all 0.75s ease-in-out;   
+    }
     nav{
         padding: 45px 0px 0px 0px;
     }
