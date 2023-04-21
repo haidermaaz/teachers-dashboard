@@ -24,8 +24,6 @@ function toggle(){
         logoImg.style.width = "60%";
         add.classList.remove("fa-bars");
     add.classList.add("fa-xmark");
-
-
     }
     else{
         element.style.display = "none";
